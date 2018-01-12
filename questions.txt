@@ -11,13 +11,18 @@ Programmation Générale
 -  f(n)= 3 * f(n-1) - f(n-2);
 Implémentez la fonction f sans qu'elle soit récursive
 
->
+> def fonction(n)
+    (1..n).inject {|product, n| product * n }
+  end
+puts fonction(0)
+puts fonction(1)
+puts fonction(n)
 
 Ruby on Rails
 
 1. Quelles seraient les premières étapes à prendre pour refacto un projet où les controllers sont trop longs?
 
->
+> Trouver tous les bouts de code similaire et faire des partials de Controller avec un Base Controller (général) qui permet d'être rappeler aux autres sans forcément se répéter.
 
 2. Qu'est-ce que le N+1 et comment l'éviter en Rails?
 
@@ -29,7 +34,7 @@ Ruby on Rails
 
 4. Décrivez une fonction de Ruby trop peu utilisée à votre goût
 
->
+> La fonction qui permet d'utiliser when/case, qui peut remplacer le if/else mais qui permet de faire des conditions plus longues et développées.
 
 Architecture
 
