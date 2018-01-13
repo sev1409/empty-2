@@ -21,17 +21,17 @@ get '/new' do
   erb :new
 end
 
-post '/posts' do
-  @post        = Post.new
-  @post.title   = params[:title]
-  @post.content    = params[:content]
-  @post.rating    = params[:rating]
-  @post.save
+# post '/posts' do
+#   @post        = Post.new
+#   @post.title   = params[:title]
+#   @post.content    = params[:content]
+#   @post.rating    = params[:rating]
+#   @post.save
 
-  if @post.save
-    redirect to('/')
-  else
-    erb :new
-  end
-end
+#   if @post.save
+#     redirect to('/')
+#   else
+#     erb :new
+#   end
+# end
 
