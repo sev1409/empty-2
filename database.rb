@@ -30,6 +30,7 @@ DB = [
 ]
 
 
+
 COMMENTS = [
   ["super", "cool!", "bien écrit", "first!", "why is everyone speaking French here?"],
   ["J'ai préféré l'autre article", "je n'ai pas vraiment compris le deuxième paragraphe", "une suite?"],
@@ -37,3 +38,30 @@ COMMENTS = [
   ["Nul"],
   ["J'ai adoré mais j'aurais préféré qu'elle finisse avec John", "good article", "Ajouté dans mes favoris!"]
 ]
+
+
+# def db_splitter (title, content, photo, rating)
+#   return (title[:title], content[:content], photo[:photo], rating[:rating])
+#   end
+# end
+# keys_to_extract = [:title, :content, :photo, :rating]
+# DB.select { |key,_| keys_to_extract.include? key }
+
+
+
+# def database(title, content, rating, photo)
+#   return DB[:title] + DB[:content] + DB[:rating] + DB[:photo]
+# end
+
+# def adding_comments(comments)
+#   sum = 0
+#   comments.each do |i|
+#     if DB.key?(i)
+#       sum = sum + DB[i]
+#     else
+#       puts i
+#       sum = sum + database(COMMENTS[i][0], COMMENTS[i][1], COMMENTS[i][2], COMMENTS[i][3], COMMENTS[i][4])
+#     end
+#   end
+#   return sum
+# end

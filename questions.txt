@@ -30,7 +30,7 @@ Ruby on Rails
 
 3. D'un point de vue pratique, quel intérêt à utiliser des constantes dans une app Rails? Quelles implémentations avez-vous vu/mis en place?
 
->
+> Utiliser des constantes est très pratique car ça permet aux hash ou arrays d'être plus lisible, condensé et de surtout ne pas avoir trop de ligne de code. Surtout dans de longues database où l'on peut lister rapidement et plus efficacement nos données. Dans plusieurs exercices j'ai pu utiliser des constantes que ce soit pour lister des restaurants ou même quand il faut parser un fichier. C'est plus clair quand tout est rassemblé.
 
 4. Décrivez une fonction de Ruby trop peu utilisée à votre goût
 
@@ -45,8 +45,30 @@ La base de données est en PostgreSQL.
 Proposez une structure de données et une implémentation en back-end qui permettrait d'être assez flexible
 tout en réduisant la possibilité de bugs et de structures non conformes
 
->
+> Utiliser le gem pundit pour permettre d'avoir des flash notices pour que l'utilisateur puissent savoir que lorsqu'il/elle fait une action en cliquant sur un bouton, la personne est notifié directement sur la page.
 
 2. Décrivez les objets et la structure de donnée que vous utiliseriez pour implémenter un jeu de Touché-Coulé
 
->
+> Pour la methode initialize, voilà ce que je propose:
+  def initialize(attributes = {})
+    @id = attributes[:id]
+    @player_1 = attributes[:player_1]
+    @player_2 = attributes[:player_2]
+    @ship = attributes[:ship]
+    @case = attributes[:case] || 0
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

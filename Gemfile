@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
 
 gem 'sinatra'
 gem 'activerecord', '4.2.5'
@@ -15,4 +15,8 @@ group :development do
   gem 'pry'
   gem 'tux'
   gem 'sqlite3'
+end
+
+group :production do
+ gem 'pg'
 end
